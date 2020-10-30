@@ -1,6 +1,8 @@
 use bevy::{prelude::*, type_registry::TypeRegistry};
 use std::fs;
 
+struct PauseScreenItem;
+
 fn resource_setup(
     mut commands: Commands,
     asset_server: Res<AssetServer>,
@@ -20,6 +22,7 @@ fn resource_setup(
             material: materials.add(Color::rgb(0.04, 0.04, 0.04).into()),
             ..Default::default()
         })
+        .with(PauseScreenItem)
         .with_children(|parent| {
             parent.spawn(TextComponents {
                 style: Style {
