@@ -1,0 +1,16 @@
+(
+    walls: [
+        (
+            wall_x: -100.0,
+            wall_y: -100.0,
+            wall_height: 200.0,
+            wall_width: 16.0,
+        ),
+        (
+            wall_x: 100.0,
+            wall_y: 100.0,
+            wall_height: 200.0,
+            wall_width: 10.0,
+        ),
+    ]
+)
